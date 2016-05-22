@@ -2,8 +2,8 @@
 #include <opencv\cv.h>
 #include <opencv\highgui.h>
 #include "disparityMapMaker.h"
-#include "segmentMarkersMaker.h"
 #include "timePrinter.h"
+#include "segmentMarkersMaker.h"
 
 void showImageAndStop(IplImage* image) {
 	cvShowImage("test", image);
@@ -16,7 +16,7 @@ int main() {
 	IplImage* leftColorImage = cvLoadImage("tsukuba_l.png", 1);
 	IplImage* rightGrayImage = cvLoadImage("tsukuba_r.png", 0);
 
-	DisparityMapMaker disparityMapMaker(2, 16, SSDtype::getInstance());
+	DisparityMapMaker<SADtype> disparityMapMaker(2, 16);
 	SegmentMarkersMaker segmentMarkersMaker(8);
 
 	TimePrinter time;
