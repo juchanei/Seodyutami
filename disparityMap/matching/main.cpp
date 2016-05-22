@@ -2,8 +2,8 @@
 #include <opencv\cv.h>
 #include <opencv\highgui.h>
 #include "disparityMapMaker.h"
-#include "timePrinter.h"
 #include "segmentMarkersMaker.h"
+#include "timePrinter.h"
 
 void showImageAndStop(IplImage* image) {
 	cvShowImage("test", image);

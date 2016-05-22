@@ -1,0 +1,10 @@
+﻿################################################################################
+# 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
+################################################################################
+
+/disparityMap/packages/OpenCV.2.4.10/build/native
+/disparityMap/packages/OpenCV.2.4.10/build/configurations.autopkg
+/disparityMap/packages/OpenCV.2.4.10/build/publisher-info.txt
+/disparityMap/packages
+/disparityMap/matching/matching.vcxproj.filters
+/disparityMap/matching/matching.vcxproj
